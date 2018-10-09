@@ -3,13 +3,14 @@
 
 
 var config = {
-  apiKey: "AIzaSyDrByFzhj9Ak_lZ54uoZEGTcTWKmsWw5LQ",
-  authDomain: "project-1-calendar-52aaa.firebaseapp.com",
-  databaseURL: "https://project-1-calendar-52aaa.firebaseio.com",
-  projectId: "project-1-calendar-52aaa",
-  storageBucket: "project-1-calendar-52aaa.appspot.com",
-  messagingSenderId: "237185498286"
+  apiKey: "AIzaSyDAg96rPRqIDo6ut9YXEBGd8xsEpGtb7-w",
+  authDomain: "test-project-19641.firebaseapp.com",
+  databaseURL: "https://test-project-19641.firebaseio.com",
+  projectId: "test-project-19641",
+  storageBucket: "",
+  messagingSenderId: "1035951541874"
 };
+
 firebase.initializeApp(config);
 var database = firebase.database();
 
