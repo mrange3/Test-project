@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/resrouces.css" />
-
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
 </head>
 
 <body>
@@ -68,13 +68,13 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Save Page -->
         <div class="col s12 m2 lg2 boxdiv right" id="resources" placeholder="Resources">
             <div>
                 <div class="row">
-                        <button class="btn waves-effect btn-small submit-btn waves-light" id="login" >Google Login
-                            </button>
+                    <button class="btn waves-effect btn-small waves-light" id="login">Google Login
+                    </button>
 
                 </div>
                 <div class="row">
@@ -94,11 +94,12 @@
                     </form>
                 </div>
             </div>
+            <div class="table-container">
             <table class="tableSaves" id="data-container">
-                <tbody id="pagination-container">
+                <tbody>
                 </tbody>
             </table>
-
+            </div>
         </div>
 
     </div>
@@ -110,10 +111,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
 <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+
+
+
 <script src="Java/main.js"></script>
 <script src="Java/calendar.js"></script>
 <script src="Java/resources.js"></script>
+
 
 
 </html>

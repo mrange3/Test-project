@@ -94,3 +94,17 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
 $("#login").on('click', function () {
   googleSign();
 });
+
+//====================Pagination====================
+
+$(document).ready(function(){
+  $('#data-container').pageMe({
+    pagerSelector:'#myPager',
+    activeColor: 'blue',
+    prevText:'Previous',
+    nextText:'Siguiente',
+    showPrevNext:true,
+    hidePageNumbers:false,
+    perPage:10
+  });
+});
