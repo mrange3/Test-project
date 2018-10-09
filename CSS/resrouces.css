@@ -1,0 +1,29 @@
+tr {
+    transform: scale(.70);
+    margin-left: 10px;
+}
+
+td {
+    padding: 0px;
+    font-size: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}

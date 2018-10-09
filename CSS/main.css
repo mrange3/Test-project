@@ -1,0 +1,51 @@
+body {
+    background-image: url(../Images/AtlantaNightTime.jpg);
+    background-size: 100%;
+    z-index: -1;
+    overflow: hidden;
+    
+}
+.GaTechLogo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 47.5%;
+  }
+.boxdiv {
+    background-color:rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+}
+.left {
+    margin: 1rem 1rem 1rem 0rem;
+    float: left;
+}
+.right {
+    margin: 1rem 0rem 1rem 1rem;
+    float: right;
+}
+.center {
+    margin: 1rem;
+}
+header {
+    margin-bottom: 4rem;
+}
+.input-field>label {
+    color: black;
+    font-weight: bold;
+}
+div.row {
+    margin-bottom: 0px;
+}
+
+.btn-small {
+    float: right;
+}

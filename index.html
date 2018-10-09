@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2018 GA Tech Bootcamp Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/resrouces.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Bootcamp 2018</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                </ul>
+                <div class="circle">
+                    <img src="Images/GaTechSeal.png" alt="GA Tech Seal" height="85px" width="85px" class="GaTechLogo">
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col s12 m2 lg2">
+            <section class="boxdiv left" placeholder="Indeed">
+                <h3>Indeed Listings</h3>
+            </section>
+
+            <section class="boxdiv left" placeholder="Google Maps">
+                <h3>Google Maps</h3>
+            </section>
+        </div>
+        <div class="boxdiv center col s12 m8 l8">
+            <section class="Calendar">
+                <h5 class="center-align">Calendar for this week:</h5>
+                <table class='responsive-table'>
+                    <thead>
+                        <tr id="CalDaysTh"></tr>
+                    </thead>
+                    <tbody>
+                        <tr id="CalDaysTd"></tr>
+                    </tbody>
+                </table>
+                <h5 class="center-align">Upcoming Events:</h5>
+                <table class='responsive-table'></table>
+            </section>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="event_name_input" type="text" class="validate" data-length="25">
+                    <label for="event_name">Name of Event</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="event_date_input" type="text" class="validate" data-length="10">
+                    <label for="event_date_input">Date</label>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Save Page -->
+        <div class="col s12 m2 lg2 boxdiv right" id="resources" placeholder="Resources">
+            <div>
+                <div class="row">
+                        <button class="btn waves-effect btn-small submit-btn waves-light" id="login" >Google Login
+                            </button>
+
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="save-title" type="text" value="" class="validate">
+                                <label for="title">Title</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="save-url" type="tel" class="validate">
+                                <label for="url">URL</label>
+                            </div>
+                            <button class="btn waves-effect btn-small submit-btn waves-light" type="submit" name="action">Save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <table class="tableSaves" id="data-container">
+                <tbody id="pagination-container">
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+<script src="Java/main.js"></script>
+<script src="Java/calendar.js"></script>
+<script src="Java/resources.js"></script>
+
+
+</html>
